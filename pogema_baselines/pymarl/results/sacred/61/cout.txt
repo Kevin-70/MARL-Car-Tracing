@@ -1,0 +1,132 @@
+[INFO 16:49:32] pymarl Running command 'my_main'
+[INFO 16:49:32] pymarl Started run with ID "61"
+[DEBUG 16:49:32] pymarl Starting Heartbeat
+[DEBUG 16:49:32] my_main Started
+[INFO 16:49:32] my_main Experiment Parameters:
+[INFO 16:49:32] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'dqn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 298247506},
+    'epsilon': 0.5,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'fixed_p': False,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-test-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 298247506,
+    't_max': 10000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 1,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 16:49:37] my_main Beginning training for 10000 timesteps
+/home/maddpg/pogema_env/pogema-baselines/pymarl/components/episode_buffer.py:103: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1659484657607/work/torch/csrc/utils/tensor_new.cpp:204.)
+  v = th.tensor(v, dtype=dtype, device=self.device)
+/home/maddpg/pogema_env/pogema-baselines/pymarl/components/episode_buffer.py:103: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 16:49:37] my_main t_env: 8 / 10000
+[INFO 16:49:37] my_main Estimated time left: 1 seconds. Time passed: 0 seconds
+[INFO 16:49:37] my_main Saving models to results/models/iql__2023-10-12_16-49-32/8
+[INFO 16:49:53] my_main t_env: 2028 / 10000
+[INFO 16:49:53] my_main Estimated time left: 1 minutes, 3 seconds. Time passed: 16 seconds
+[INFO 16:49:53] my_main Recent Stats | t_env:       2028 | Episode:       78
+CSR:                       0.0000	ISR:                       0.3377	ep_length_mean:           17.1169	epsilon:                   0.9624
+grad_norm:                37.4797	loss:                    945.3670	q_taken_mean:              0.0055	return_mean:             -381.8182
+return_std:              286.8232	target_mean:              -9.0066	td_error_abs:             22.5215	test_CSR:                  0.0000
+test_ISR:                  0.3333	test_ep_length_mean:      20.0000	test_return_mean:        -668.0000	test_return_std:           0.0000
+
+[INFO 16:50:12] my_main t_env: 4068 / 10000
+[INFO 16:50:12] my_main Estimated time left: 55 seconds. Time passed: 35 seconds
+[INFO 16:50:13] my_main Recent Stats | t_env:       4068 | Episode:      145
+CSR:                       0.0000	ISR:                       0.3362	ep_length_mean:           21.5605	epsilon:                   0.9235
+grad_norm:                64.7736	loss:                    768.1833	q_taken_mean:             -5.2811	return_mean:             -481.8937
+return_std:              564.2524	target_mean:             -10.0945	td_error_abs:             17.6154	test_CSR:                  0.0000
+test_ISR:                  0.3333	test_ep_length_mean:      23.6667	test_return_mean:        -684.3333	test_return_std:           0.0000
+
+[INFO 16:50:27] my_main Updated target network
+[INFO 16:50:34] my_main t_env: 6069 / 10000
+[INFO 16:50:34] my_main Estimated time left: 42 seconds. Time passed: 57 seconds
+[INFO 16:50:34] my_main Recent Stats | t_env:       6069 | Episode:      231
+CSR:                       0.0000	ISR:                       0.3374	ep_length_mean:           21.9872	epsilon:                   0.8849
+grad_norm:                65.7420	loss:                    672.8263	q_taken_mean:             -6.8397	return_mean:             -490.7168
+return_std:              525.5266	target_mean:              -9.8406	td_error_abs:             15.5150	test_CSR:                  0.0000
+test_ISR:                  0.3333	test_ep_length_mean:      20.0000	test_return_mean:        -495.2500	test_return_std:           0.0000
+
+[INFO 16:50:56] my_main t_env: 8083 / 10000
+[INFO 16:50:56] my_main Estimated time left: 20 seconds. Time passed: 1 minutes, 19 seconds
+[INFO 16:50:56] my_main Recent Stats | t_env:       8083 | Episode:      315
+CSR:                       0.0000	ISR:                       0.3366	ep_length_mean:           22.3850	epsilon:                   0.8467
+grad_norm:                71.7752	loss:                    628.5154	q_taken_mean:            -10.0986	return_mean:             -492.4663
+return_std:              505.5537	target_mean:             -12.4680	td_error_abs:             14.6585	test_CSR:                  0.0000
+test_ISR:                  0.3333	test_ep_length_mean:      21.8000	test_return_mean:        -511.8000	test_return_std:           0.0000
+

@@ -1,0 +1,193 @@
+[INFO 17:41:32] pymarl Running command 'my_main'
+[INFO 17:41:32] pymarl Started run with ID "93"
+[DEBUG 17:41:32] pymarl Starting Heartbeat
+[DEBUG 17:41:32] my_main Started
+[INFO 17:41:32] my_main Experiment Parameters:
+[INFO 17:41:32] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'alpha': 0.8,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'replay_directory': './renders/just_test/',
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 469674505},
+    'epsilon': 1.0,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'fixed_p': True,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-test-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 469674505,
+    't_max': 100000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 1,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 17:41:34] my_main Beginning training for 100000 timesteps
+/home/maddpg/pogema_env/pogema_baselines/pymarl/components/episode_buffer.py:103: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1659484657607/work/torch/csrc/utils/tensor_new.cpp:204.)
+  v = th.tensor(v, dtype=dtype, device=self.device)
+/home/maddpg/pogema_env/pogema_baselines/pymarl/components/episode_buffer.py:103: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 17:41:34] my_main t_env: 12 / 100000
+[INFO 17:41:34] my_main Estimated time left: 8 seconds. Time passed: 0 seconds
+[INFO 17:41:34] my_main Saving models to results/models/iql__2023-10-20_17-41-32/12
+[INFO 17:41:45] my_main Updated target network
+[INFO 17:41:47] my_main Recent Stats | t_env:       2003 | Episode:      227
+CSR:                       0.0000	ISR:                       0.6667	ep_length_mean:           12.0000	epsilon:                   1.0000
+grad_norm:                17.7924	loss:                    966.9877	q_taken_mean:              0.0351	return_mean:             -26.8000
+return_std:                0.0000	target_mean:              -2.0727	td_error_abs:             21.4259	test_CSR:                  0.0000
+test_ISR:                  0.3333	test_ep_length_mean:       5.0000	test_return_mean:        -20.0000	test_return_std:           0.0000
+
+[INFO 17:41:47] my_main t_env: 2016 / 100000
+[INFO 17:41:47] my_main Estimated time left: 10 minutes, 26 seconds. Time passed: 12 seconds
+[INFO 17:41:57] my_main Updated target network
+[INFO 17:42:00] my_main Recent Stats | t_env:       4015 | Episode:      467
+CSR:                       0.0000	ISR:                       0.5066	ep_length_mean:           10.3947	epsilon:                   0.9618
+grad_norm:                90.8102	loss:                    868.3380	q_taken_mean:             -0.4659	return_mean:             -25.3105
+return_std:               47.8319	target_mean:              -1.8641	td_error_abs:             19.2391	test_CSR:                  0.0000
+test_ISR:                  0.3333	test_ep_length_mean:       5.0000	test_return_mean:         -2.5000	test_return_std:           0.0000
+
+[INFO 17:42:00] my_main t_env: 4022 / 100000
+[INFO 17:42:00] my_main Estimated time left: 10 minutes, 47 seconds. Time passed: 26 seconds
+[INFO 17:42:07] my_main Updated target network
+[INFO 17:42:14] my_main Recent Stats | t_env:       6017 | Episode:      724
+CSR:                       0.0000	ISR:                       0.4498	ep_length_mean:            9.7276	epsilon:                   0.9237
+grad_norm:               184.1432	loss:                    823.0409	q_taken_mean:             -0.9014	return_mean:             -22.3973
+return_std:               60.6086	target_mean:              -2.2210	td_error_abs:             18.6432	test_CSR:                  0.0000
+test_ISR:                  0.3333	test_ep_length_mean:       7.3333	test_return_mean:         15.3333	test_return_std:           0.0000
+
+[INFO 17:42:14] my_main t_env: 6032 / 100000
+[INFO 17:42:14] my_main Estimated time left: 10 minutes, 46 seconds. Time passed: 40 seconds
+[INFO 17:42:18] my_main Updated target network
+[INFO 17:42:27] my_main Recent Stats | t_env:       8021 | Episode:      913
+CSR:                       0.0000	ISR:                       0.4219	ep_length_mean:            9.2434	epsilon:                   0.8857
+grad_norm:               197.5906	loss:                    838.2765	q_taken_mean:             -0.6879	return_mean:             -19.2741
+return_std:               65.8169	target_mean:              -0.4055	td_error_abs:             18.2859	test_CSR:                  0.0000
+test_ISR:                  0.3333	test_ep_length_mean:       6.2500	test_return_mean:         28.8500	test_return_std:           0.0000
+
+[INFO 17:42:27] my_main t_env: 8032 / 100000
+[INFO 17:42:27] my_main Estimated time left: 9 minutes, 48 seconds. Time passed: 53 seconds
+[INFO 17:42:33] my_main Updated target network
+[INFO 17:42:44] my_main Recent Stats | t_env:      10031 | Episode:     1158
+CSR:                       0.0000	ISR:                       0.4049	ep_length_mean:            9.5224	epsilon:                   0.8476
+grad_norm:               267.4744	loss:                    802.5820	q_taken_mean:             -0.7698	return_mean:             -30.2710
+return_std:              168.5969	target_mean:              -0.2940	td_error_abs:             17.7321	test_CSR:                  0.0000
+test_ISR:                  0.3333	test_ep_length_mean:       7.2000	test_return_mean:          8.0000	test_return_std:           0.0000
+
+[INFO 17:42:44] my_main t_env: 10041 / 100000
+[INFO 17:42:44] my_main Estimated time left: 12 minutes, 32 seconds. Time passed: 1 minutes, 9 seconds
+[INFO 17:42:46] my_main Updated target network
+[INFO 17:42:58] my_main Updated target network
+[INFO 17:42:59] my_main Recent Stats | t_env:      12033 | Episode:     1419
+CSR:                       0.0000	ISR:                       0.3394	ep_length_mean:            8.7624	epsilon:                   0.8094
+grad_norm:               367.8971	loss:                    729.6404	q_taken_mean:             -1.7447	return_mean:             -27.5446
+return_std:              183.8618	target_mean:              -0.4471	td_error_abs:             16.4860	test_CSR:                  0.0000
+test_ISR:                  0.3333	test_ep_length_mean:       7.0000	test_return_mean:         20.7200	test_return_std:           0.0000
+
+[INFO 17:42:59] my_main t_env: 12043 / 100000
+[INFO 17:42:59] my_main Estimated time left: 11 minutes, 28 seconds. Time passed: 1 minutes, 25 seconds
+[INFO 17:43:10] my_main Updated target network
+[INFO 17:43:14] my_main Recent Stats | t_env:      14034 | Episode:     1665
+CSR:                       0.0000	ISR:                       0.3382	ep_length_mean:            8.5269	epsilon:                   0.7713
+grad_norm:               434.7887	loss:                    680.1080	q_taken_mean:             -2.1000	return_mean:             -25.3850
+return_std:              182.8841	target_mean:              -0.0832	td_error_abs:             16.0423	test_CSR:                  0.0000
+test_ISR:                  0.3333	test_ep_length_mean:       6.2000	test_return_mean:         33.8000	test_return_std:           0.0000
+
+[INFO 17:43:15] my_main t_env: 14046 / 100000
+[INFO 17:43:15] my_main Estimated time left: 10 minutes, 55 seconds. Time passed: 1 minutes, 40 seconds
+[INFO 17:43:23] my_main Updated target network
+[INFO 17:43:30] my_main Recent Stats | t_env:      16039 | Episode:     1922
+CSR:                       0.0000	ISR:                       0.3388	ep_length_mean:            8.4900	epsilon:                   0.7334
+grad_norm:               474.5202	loss:                    624.7541	q_taken_mean:             -1.6970	return_mean:             -24.3336
+return_std:              185.3896	target_mean:               0.9484	td_error_abs:             15.5116	test_CSR:                  0.0000
+test_ISR:                  0.4000	test_ep_length_mean:       4.2000	test_return_mean:         43.0800	test_return_std:           0.0000
+
+[INFO 17:43:30] my_main t_env: 16053 / 100000
+[INFO 17:43:30] my_main Estimated time left: 10 minutes, 41 seconds. Time passed: 1 minutes, 56 seconds
+[INFO 17:43:35] my_main Updated target network
+[INFO 17:43:46] my_main t_env: 18166 / 100000
+[INFO 17:43:46] my_main Estimated time left: 10 minutes, 38 seconds. Time passed: 2 minutes, 12 seconds
+[INFO 17:43:46] my_main Recent Stats | t_env:      18166 | Episode:     2167
+CSR:                       0.0000	ISR:                       0.3399	ep_length_mean:            8.0981	epsilon:                   0.6578
+grad_norm:               516.5672	loss:                    527.0752	q_taken_mean:             -1.0215	return_mean:             -14.0939
+return_std:              133.8167	target_mean:               1.1687	td_error_abs:             14.8961	test_CSR:                  0.0000
+test_ISR:                  0.4000	test_ep_length_mean:       3.4000	test_return_mean:         60.0800	test_return_std:           0.0000
+
+[INFO 17:43:48] my_main Updated target network
+[INFO 17:44:01] my_main t_env: 20178 / 100000
+[INFO 17:44:01] my_main Estimated time left: 9 minutes, 38 seconds. Time passed: 2 minutes, 27 seconds
+[INFO 17:44:01] my_main Recent Stats | t_env:      20178 | Episode:     2388
+CSR:                       0.0000	ISR:                       0.3407	ep_length_mean:            8.2789	epsilon:                   0.6169
+grad_norm:               497.8311	loss:                    459.2621	q_taken_mean:             -0.1691	return_mean:             -22.5360
+return_std:              241.9781	target_mean:               2.2288	td_error_abs:             14.4315	test_CSR:                  0.0000
+test_ISR:                  0.4000	test_ep_length_mean:       3.4000	test_return_mean:         49.7600	test_return_std:           0.0000
+
+[INFO 17:44:02] my_main Updated target network

@@ -1,0 +1,17 @@
+algo: IQL
+settings:
+  # t_max: 100000
+  fixed_p: True
+  epsilon: 1.0
+  test_nepisode: 100
+logging:
+  use_wandb: False
+  project_name: "Pogema-test-PyMARL"
+  evaluate: True
+  checkpoint_path: '/home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-38-37'
+agent_params:
+  agent: "rnn"
+env_args: 
+  grid_config: 
+    map_name: OneCriminal
+    replay_directory: "./renders/test_e7/"

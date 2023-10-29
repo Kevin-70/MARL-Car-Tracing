@@ -1,0 +1,32 @@
+{
+  "CSR": [
+    0.0
+  ],
+  "CSR_T": [
+    11
+  ],
+  "ISR": [
+    0.3333333333333333
+  ],
+  "ISR_T": [
+    11
+  ],
+  "ep_length_mean": [
+    11.0
+  ],
+  "ep_length_mean_T": [
+    11
+  ],
+  "return_mean": [
+    9.0
+  ],
+  "return_mean_T": [
+    11
+  ],
+  "return_std": [
+    0.0
+  ],
+  "return_std_T": [
+    11
+  ]
+}

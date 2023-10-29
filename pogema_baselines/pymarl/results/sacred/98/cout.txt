@@ -1,0 +1,193 @@
+[INFO 19:24:58] pymarl Running command 'my_main'
+[INFO 19:24:58] pymarl Started run with ID "98"
+[DEBUG 19:24:58] pymarl Starting Heartbeat
+[DEBUG 19:24:58] my_main Started
+[INFO 19:24:58] my_main Experiment Parameters:
+[INFO 19:24:58] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'alpha': 1.0,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'replay_directory': './renders/police_qmix_e1_a1_new/',
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 695914649},
+    'epsilon': 1.0,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'fixed_p': False,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'name': 'qmix',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-qmix-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 200000,
+    'save_replay': False,
+    'seed': 695914649,
+    't_max': 20000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 1,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 19:24:59] my_main Beginning training for 20000 timesteps
+/home/maddpg/pogema_env/pogema_baselines/pymarl/components/episode_buffer.py:103: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1659484657607/work/torch/csrc/utils/tensor_new.cpp:204.)
+  v = th.tensor(v, dtype=dtype, device=self.device)
+/home/maddpg/pogema_env/pogema_baselines/pymarl/components/episode_buffer.py:103: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 19:24:59] my_main t_env: 13 / 20000
+[INFO 19:24:59] my_main Estimated time left: 1 seconds. Time passed: 0 seconds
+[INFO 19:25:00] my_main Saving models to results/models/qmix__2023-10-28_19-24-58/13
+[INFO 19:25:17] my_main Recent Stats | t_env:       2012 | Episode:      143
+CSR:                       0.0000	CriminalOnGoal_mean:       1.0000	ISR:                       0.3333	PoliceOnGoal_mean:         0.0000
+ep_length_mean:           13.0000	epsilon:                   1.0000	grad_norm:               169.7510	loss:                    640.0324
+q_taken_mean:             -0.1146	return_mean:             -148.0000	return_std:                0.0000	target_mean:              -4.7314
+td_error_abs:             14.2696	test_CSR:                  0.0000	test_CriminalOnGoal_mean:  1.0000	test_ISR:                  0.3333
+test_PoliceOnGoal_mean:    0.0000	test_ep_length_mean:      20.0000	test_return_mean:        -580.0000	test_return_std:           0.0000
+
+[INFO 19:25:17] my_main t_env: 2025 / 20000
+[INFO 19:25:17] my_main Estimated time left: 2 minutes, 35 seconds. Time passed: 17 seconds
+[INFO 19:25:21] my_main Updated target network
+[INFO 19:25:32] my_main t_env: 4203 / 20000
+[INFO 19:25:32] my_main Estimated time left: 1 minutes, 46 seconds. Time passed: 32 seconds
+[INFO 19:25:32] my_main Recent Stats | t_env:       4203 | Episode:      281
+CSR:                       0.0000	CriminalOnGoal_mean:       0.8025	ISR:                       0.3349	PoliceOnGoal_mean:         0.2021
+ep_length_mean:           14.3226	epsilon:                   0.9250	grad_norm:               1199.0132	loss:                    510.6820
+q_taken_mean:             -1.1944	return_mean:             -141.8938	return_std:              204.5647	target_mean:              -4.1865
+td_error_abs:             13.2002	test_CSR:                  0.0000	test_CriminalOnGoal_mean:  0.3333	test_ISR:                  0.3333
+test_PoliceOnGoal_mean:    0.6667	test_ep_length_mean:      10.6667	test_return_mean:        -159.0000	test_return_std:           0.0000
+
+[INFO 19:25:43] my_main Updated target network
+[INFO 19:25:47] my_main t_env: 6211 / 20000
+[INFO 19:25:47] my_main Estimated time left: 1 minutes, 44 seconds. Time passed: 47 seconds
+[INFO 19:25:47] my_main Recent Stats | t_env:       6211 | Episode:      437
+CSR:                       0.0000	CriminalOnGoal_mean:       0.7654	ISR:                       0.3350	PoliceOnGoal_mean:         0.2397
+ep_length_mean:           13.9599	epsilon:                   0.8823	grad_norm:               1475.6556	loss:                    463.9200
+q_taken_mean:             -2.8168	return_mean:             -132.4620	return_std:              182.5473	target_mean:              -4.5944
+td_error_abs:             12.8579	test_CSR:                  0.0000	test_CriminalOnGoal_mean:  0.2500	test_ISR:                  0.3333
+test_PoliceOnGoal_mean:    0.7500	test_ep_length_mean:       8.2500	test_return_mean:        -96.0000	test_return_std:           0.0000
+
+[INFO 19:26:01] my_main t_env: 8227 / 20000
+[INFO 19:26:01] my_main Estimated time left: 1 minutes, 22 seconds. Time passed: 1 minutes, 1 seconds
+[INFO 19:26:01] my_main Recent Stats | t_env:       8227 | Episode:      562
+CSR:                       0.0000	CriminalOnGoal_mean:       0.7435	ISR:                       0.3374	PoliceOnGoal_mean:         0.2686
+ep_length_mean:           14.3935	epsilon:                   0.8443	grad_norm:               2162.2427	loss:                    513.2665
+q_taken_mean:             -0.7944	return_mean:             -132.7136	return_std:              204.1841	target_mean:              -2.8054
+td_error_abs:             13.9783	test_CSR:                  0.0000	test_CriminalOnGoal_mean:  0.4000	test_ISR:                  0.3333
+test_PoliceOnGoal_mean:    0.6000	test_ep_length_mean:      10.0000	test_return_mean:        -91.8000	test_return_std:           0.0000
+
+[INFO 19:26:05] my_main Updated target network
+[INFO 19:26:17] my_main t_env: 10230 / 20000
+[INFO 19:26:17] my_main Estimated time left: 1 minutes, 16 seconds. Time passed: 1 minutes, 17 seconds
+[INFO 19:26:17] my_main Recent Stats | t_env:      10230 | Episode:      721
+CSR:                       0.0000	CriminalOnGoal_mean:       0.6806	ISR:                       0.3395	PoliceOnGoal_mean:         0.3378
+ep_length_mean:           14.3130	epsilon:                   0.8060	grad_norm:               2711.9207	loss:                    522.4535
+q_taken_mean:             -0.9013	return_mean:             -124.4406	return_std:              227.9288	target_mean:              -1.7108
+td_error_abs:             14.6571	test_CSR:                  0.0000	test_CriminalOnGoal_mean:  0.4000	test_ISR:                  0.4000
+test_PoliceOnGoal_mean:    0.8000	test_ep_length_mean:      10.6000	test_return_mean:        -13.2000	test_return_std:           0.0000
+
+[INFO 19:26:25] my_main Updated target network
+[INFO 19:26:34] my_main t_env: 12235 / 20000
+[INFO 19:26:34] my_main Estimated time left: 1 minutes, 5 seconds. Time passed: 1 minutes, 34 seconds
+[INFO 19:26:34] my_main Recent Stats | t_env:      12235 | Episode:      894
+CSR:                       0.0000	CriminalOnGoal_mean:       0.6577	ISR:                       0.3397	PoliceOnGoal_mean:         0.3613
+ep_length_mean:           13.8169	epsilon:                   0.7678	grad_norm:               3426.4429	loss:                    532.0020
+q_taken_mean:              1.3725	return_mean:             -115.6669	return_std:              196.7508	target_mean:               1.2819
+td_error_abs:             15.0802	test_CSR:                  0.0000	test_CriminalOnGoal_mean:  0.6000	test_ISR:                  0.4000
+test_PoliceOnGoal_mean:    0.6000	test_ep_length_mean:      12.2000	test_return_mean:        -33.4000	test_return_std:           0.0000
+
+[INFO 19:26:44] my_main t_env: 14259 / 20000
+[INFO 19:26:44] my_main Estimated time left: 30 seconds. Time passed: 1 minutes, 45 seconds
+[INFO 19:26:45] my_main Recent Stats | t_env:      14259 | Episode:     1000
+CSR:                       0.0000	CriminalOnGoal_mean:       0.6298	ISR:                       0.3384	PoliceOnGoal_mean:         0.3855
+ep_length_mean:           14.4562	epsilon:                   0.7339	grad_norm:               4089.4448	loss:                    598.3760
+q_taken_mean:              4.5813	return_mean:             -118.9161	return_std:              254.1744	target_mean:               3.9291
+td_error_abs:             16.1586	test_CSR:                  0.0000	test_CriminalOnGoal_mean:  0.8000	test_ISR:                  0.4000
+test_PoliceOnGoal_mean:    0.4000	test_ep_length_mean:      14.8000	test_return_mean:        -58.4000	test_return_std:           0.0000
+
+[INFO 19:26:45] my_main Updated target network
+[INFO 19:26:58] my_main t_env: 16260 / 20000
+[INFO 19:26:58] my_main Estimated time left: 25 seconds. Time passed: 1 minutes, 58 seconds
+[INFO 19:26:58] my_main Recent Stats | t_env:      16260 | Episode:     1137
+CSR:                       0.0000	CriminalOnGoal_mean:       0.6465	ISR:                       0.3395	PoliceOnGoal_mean:         0.3719
+ep_length_mean:           14.8031	epsilon:                   0.6914	grad_norm:               4729.8740	loss:                    643.7838
+q_taken_mean:              6.7971	return_mean:             -123.9718	return_std:              278.9608	target_mean:               6.6295
+td_error_abs:             17.2559	test_CSR:                  0.0000	test_CriminalOnGoal_mean:  1.0000	test_ISR:                  0.4000
+test_PoliceOnGoal_mean:    0.2000	test_ep_length_mean:      18.0000	test_return_mean:        -102.8000	test_return_std:           0.0000
+
+[INFO 19:27:04] my_main Updated target network
+[INFO 19:27:13] my_main t_env: 18269 / 20000
+[INFO 19:27:13] my_main Estimated time left: 13 seconds. Time passed: 2 minutes, 14 seconds
+[INFO 19:27:13] my_main Recent Stats | t_env:      18269 | Episode:     1307
+CSR:                       0.0000	CriminalOnGoal_mean:       0.6364	ISR:                       0.3391	PoliceOnGoal_mean:         0.3798
+ep_length_mean:           13.9410	epsilon:                   0.6531	grad_norm:               4663.8979	loss:                    640.4757
+q_taken_mean:              7.1641	return_mean:             -113.6937	return_std:              242.3059	target_mean:               7.7684
+td_error_abs:             17.2397	test_CSR:                  0.0000	test_CriminalOnGoal_mean:  1.0000	test_ISR:                  0.4000
+test_PoliceOnGoal_mean:    0.2000	test_ep_length_mean:      17.8000	test_return_mean:        -103.4000	test_return_std:           0.0000
+
+[INFO 19:27:22] my_main Updated target network
+[INFO 19:27:26] my_main Finished Training

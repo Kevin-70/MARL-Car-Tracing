@@ -1,0 +1,22 @@
+algo: IQL
+settings:
+  t_max: 1000000
+  fixed_p: True #T:Police, F:Criminal
+  epsilon: 0.7
+  test_nepisode: 1
+logging:
+  use_wandb: False
+  project_name: "Pogema-dqn-dis"
+  save_model_interval: 200000
+  # load_step: 4000000
+  # evaluate: True
+  # checkpoint_path: '/home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-18_20-50-30'
+  # save_replay: True
+agent_params:
+  agent: "rnn" #dqn
+env_args: 
+  grid_config: 
+    map_name: OneCriminal
+    replay_directory: "./renders/distance_0.7_rnn/"
+    alpha: 1.0
+

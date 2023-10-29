@@ -1,0 +1,16 @@
+container:
+  image: "pogema-sf:latest"
+  command: 'python main.py --config_path="configs/8x8.yaml"'
+
+  tty: True
+  environment:
+    - "OMP_NUM_THREADS=1"
+    - "MKL_NUM_THREADS=1"
+    - "NVIDIA_VISIBLE_DEVICES=0"
+code:
+  folder: "."
+  forward_environment_keys: ["WANDB_API_KEY"]
+  ignore: [".git"]
+host_config:
+  runtime: nvidia
+  shm_size: '24096m'

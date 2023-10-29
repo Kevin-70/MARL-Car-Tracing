@@ -1,0 +1,1079 @@
+/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/gymnasium/envs/registration.py:693: UserWarning: [33mWARN: Overriding environment Pogema-v0 already in registry.[0m
+  logger.warn(f"Overriding environment {new_spec.id} already in registry.")
+[DEBUG 14:44:04] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 14:44:04] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:44:04] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[INFO 14:44:04] root Saving to FileStorageObserver in results/sacred.
+[DEBUG 14:44:04] pymarl Using capture mode "fd"
+[INFO 14:44:04] pymarl Running command 'my_main'
+[INFO 14:44:04] pymarl Started run with ID "104"
+[DEBUG 14:44:04] pymarl Starting Heartbeat
+[DEBUG 14:44:04] my_main Started
+[INFO 14:44:04] my_main Experiment Parameters:
+[INFO 14:44:04] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '/home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'alpha': 0.8,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'replay_directory': './renders/test_e3/',
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 776275186},
+    'epsilon': 1.0,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': True,
+    'fixed_p': False,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-test-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 776275186,
+    't_max': 10000000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 14:44:06] my_main Loading model from /home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17/800323
+[DEBUG 14:44:06] pymarl Stopping Heartbeat
+[ERROR 14:44:06] pymarl Failed after 0:00:02!
+Traceback (most recent call last):
+  File "/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/sacred/experiment.py", line 312, in run_commandline
+    return self.run(
+  File "/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/sacred/experiment.py", line 276, in run
+    run()
+  File "/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/sacred/run.py", line 238, in __call__
+    self.result = self.main_function(*args)
+  File "/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/sacred/config/captured_function.py", line 42, in captured_function
+    result = wrapped(*args, **kwargs)
+  File "training_run.py", line 40, in my_main
+    run(_run, config, _log)
+  File "/home/maddpg/pogema_env/pogema_baselines/pymarl/training.py", line 49, in run
+    run_sequential(args=args, logger=logger)
+  File "/home/maddpg/pogema_env/pogema_baselines/pymarl/training.py", line 144, in run_sequential
+    learner.load_models(model_path)
+  File "/home/maddpg/pogema_env/pogema_baselines/pymarl/learners/q_learner.py", line 138, in load_models
+    self.mac.load_models(path)
+  File "/home/maddpg/pogema_env/pogema_baselines/pymarl/controllers/basic_controller.py", line 72, in load_models
+    self.agent.load_state_dict(th.load("{}/agent.th".format(path), map_location=lambda storage, loc: storage))
+  File "/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1604, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for RNNAgent:
+	size mismatch for fc1.weight: copying a param with shape torch.Size([64, 252]) from checkpoint, the shape in current model is torch.Size([64, 253]).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "training_run.py", line 132, in <module>
+    main()
+  File "training_run.py", line 128, in main
+    go_run(exp, sys.argv[:1])
+  File "training_run.py", line 109, in go_run
+    ex.run_commandline(params)
+  File "/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/sacred/experiment.py", line 347, in run_commandline
+    print_filtered_stacktrace()
+  File "/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/sacred/utils.py", line 494, in print_filtered_stacktrace
+    print(format_filtered_stacktrace(filter_traceback), file=sys.stderr)
+  File "/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/sacred/utils.py", line 529, in format_filtered_stacktrace
+    return "".join(filtered_traceback_format(tb_exception))
+  File "/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/sacred/utils.py", line 569, in filtered_traceback_format
+    current_tb = tb_exception.exc_traceback
+AttributeError: 'TracebackException' object has no attribute 'exc_traceback'
+b'' None
+/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/gymnasium/envs/registration.py:693: UserWarning: [33mWARN: Overriding environment Pogema-v0 already in registry.[0m
+  logger.warn(f"Overriding environment {new_spec.id} already in registry.")
+[DEBUG 14:47:29] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 14:47:29] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 14:47:29] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[INFO 14:47:29] root Saving to FileStorageObserver in results/sacred.
+[DEBUG 14:47:29] pymarl Using capture mode "fd"
+[INFO 14:47:29] pymarl Running command 'my_main'
+[INFO 14:47:29] pymarl Started run with ID "105"
+[DEBUG 14:47:29] pymarl Starting Heartbeat
+[DEBUG 14:47:29] my_main Started
+[INFO 14:47:29] my_main Experiment Parameters:
+[INFO 14:47:29] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '/home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'alpha': 0.8,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'replay_directory': './renders/test_e3/',
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 786225143},
+    'epsilon': 1.0,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': True,
+    'fixed_p': True,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-test-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 786225143,
+    't_max': 10000000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 14:47:31] my_main Loading model from /home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17/800323
+b'' None
+/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/gymnasium/envs/registration.py:693: UserWarning: [33mWARN: Overriding environment Pogema-v0 already in registry.[0m
+  logger.warn(f"Overriding environment {new_spec.id} already in registry.")
+[DEBUG 15:02:02] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 15:02:02] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:02:02] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[INFO 15:02:02] root Saving to FileStorageObserver in results/sacred.
+[DEBUG 15:02:03] pymarl Using capture mode "fd"
+[INFO 15:02:03] pymarl Running command 'my_main'
+[INFO 15:02:03] pymarl Started run with ID "106"
+[DEBUG 15:02:03] pymarl Starting Heartbeat
+[DEBUG 15:02:03] my_main Started
+[INFO 15:02:03] my_main Experiment Parameters:
+[INFO 15:02:03] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '/home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'alpha': 0.8,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'replay_directory': './renders/test_e3/',
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 796603587},
+    'epsilon': 1.0,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': True,
+    'fixed_p': True,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-test-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 796603587,
+    't_max': 10000000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 15:02:04] my_main Loading model from /home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17/800323
+b'' None
+/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/gymnasium/envs/registration.py:693: UserWarning: [33mWARN: Overriding environment Pogema-v0 already in registry.[0m
+  logger.warn(f"Overriding environment {new_spec.id} already in registry.")
+[DEBUG 15:03:38] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 15:03:38] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:03:38] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[INFO 15:03:38] root Saving to FileStorageObserver in results/sacred.
+[DEBUG 15:03:39] pymarl Using capture mode "fd"
+[INFO 15:03:39] pymarl Running command 'my_main'
+[INFO 15:03:39] pymarl Started run with ID "107"
+[DEBUG 15:03:39] pymarl Starting Heartbeat
+[DEBUG 15:03:39] my_main Started
+[INFO 15:03:39] my_main Experiment Parameters:
+[INFO 15:03:39] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '/home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'alpha': 0.8,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'replay_directory': './renders/test_e3/',
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 646248081},
+    'epsilon': 1.0,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': True,
+    'fixed_p': True,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-test-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 646248081,
+    't_max': 10000000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 15:03:40] my_main Loading model from /home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17/800323
+b'' None
+/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/gymnasium/envs/registration.py:693: UserWarning: [33mWARN: Overriding environment Pogema-v0 already in registry.[0m
+  logger.warn(f"Overriding environment {new_spec.id} already in registry.")
+[DEBUG 15:09:54] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 15:09:54] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:09:54] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:09:55] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:09:55] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[INFO 15:09:55] root Saving to FileStorageObserver in results/sacred.
+[DEBUG 15:09:55] pymarl Using capture mode "fd"
+[INFO 15:09:55] pymarl Running command 'my_main'
+[INFO 15:09:55] pymarl Started run with ID "108"
+[DEBUG 15:09:55] pymarl Starting Heartbeat
+[DEBUG 15:09:55] my_main Started
+[INFO 15:09:55] my_main Experiment Parameters:
+[INFO 15:09:55] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '/home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'alpha': 0.8,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'replay_directory': './renders/test_e3/',
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 932069982},
+    'epsilon': 1.0,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': True,
+    'fixed_p': True,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-test-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 932069982,
+    't_max': 10000000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 15:09:56] my_main Loading model from /home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17/800323
+b'' None
+/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/gymnasium/envs/registration.py:693: UserWarning: [33mWARN: Overriding environment Pogema-v0 already in registry.[0m
+  logger.warn(f"Overriding environment {new_spec.id} already in registry.")
+[DEBUG 15:19:02] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 15:19:02] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:19:02] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:19:03] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[INFO 15:19:03] root Saving to FileStorageObserver in results/sacred.
+[DEBUG 15:19:03] pymarl Using capture mode "fd"
+[INFO 15:19:03] pymarl Running command 'my_main'
+[INFO 15:19:03] pymarl Started run with ID "109"
+[DEBUG 15:19:03] pymarl Starting Heartbeat
+[DEBUG 15:19:03] my_main Started
+[INFO 15:19:03] my_main Experiment Parameters:
+[INFO 15:19:03] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '/home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'alpha': 0.8,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'replay_directory': './renders/test_e3/',
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 33245534},
+    'epsilon': 1.0,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': True,
+    'fixed_p': True,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-test-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 33245534,
+    't_max': 10000000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 15:19:05] my_main Loading model from /home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17/800323
+b'' None
+/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/gymnasium/envs/registration.py:693: UserWarning: [33mWARN: Overriding environment Pogema-v0 already in registry.[0m
+  logger.warn(f"Overriding environment {new_spec.id} already in registry.")
+[DEBUG 15:24:25] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 15:24:25] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:24:25] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[INFO 15:24:25] root Saving to FileStorageObserver in results/sacred.
+[DEBUG 15:24:25] pymarl Using capture mode "fd"
+[INFO 15:24:25] pymarl Running command 'my_main'
+[INFO 15:24:25] pymarl Started run with ID "110"
+[DEBUG 15:24:25] pymarl Starting Heartbeat
+[DEBUG 15:24:25] my_main Started
+[INFO 15:24:25] my_main Experiment Parameters:
+[INFO 15:24:25] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '/home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'alpha': 0.8,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'replay_directory': './renders/test_e3/',
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 54011193},
+    'epsilon': 1.0,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': True,
+    'fixed_p': True,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-test-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 54011193,
+    't_max': 10000000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 15:24:27] my_main Loading model from /home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-37-17/800323
+b'' None
+/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/gymnasium/envs/registration.py:693: UserWarning: [33mWARN: Overriding environment Pogema-v0 already in registry.[0m
+  logger.warn(f"Overriding environment {new_spec.id} already in registry.")
+[DEBUG 15:28:18] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 15:28:18] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:28:18] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[INFO 15:28:18] root Saving to FileStorageObserver in results/sacred.
+[DEBUG 15:28:18] pymarl Using capture mode "fd"
+[INFO 15:28:18] pymarl Running command 'my_main'
+[INFO 15:28:18] pymarl Started run with ID "111"
+[DEBUG 15:28:18] pymarl Starting Heartbeat
+[DEBUG 15:28:18] my_main Started
+[INFO 15:28:18] my_main Experiment Parameters:
+[INFO 15:28:18] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '/home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-38-03',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'alpha': 0.8,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'replay_directory': './renders/test_e5/',
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 942404846},
+    'epsilon': 1.0,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': True,
+    'fixed_p': True,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-test-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 942404846,
+    't_max': 10000000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 15:28:20] my_main Loading model from /home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-38-03/800055
+b'' None
+/home/maddpg/.conda/envs/maddpg/lib/python3.8/site-packages/gymnasium/envs/registration.py:693: UserWarning: [33mWARN: Overriding environment Pogema-v0 already in registry.[0m
+  logger.warn(f"Overriding environment {new_spec.id} already in registry.")
+[DEBUG 15:29:32] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+[DEBUG 15:29:32] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:29:32] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/maddpg/pogema_env/pogema_baselines, universal_newlines=False, shell=None, istream=<valid stream>)
+[INFO 15:29:32] root Saving to FileStorageObserver in results/sacred.
+[DEBUG 15:29:33] pymarl Using capture mode "fd"
+[INFO 15:29:33] pymarl Running command 'my_main'
+[INFO 15:29:33] pymarl Started run with ID "112"
+[DEBUG 15:29:33] pymarl Starting Heartbeat
+[DEBUG 15:29:33] my_main Started
+[INFO 15:29:33] my_main Experiment Parameters:
+[INFO 15:29:33] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '/home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-38-37',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'alpha': 0.8,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.2,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'OneCriminal',
+                                       'max_episode_steps': 256,
+                                       'num_agents': 3,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'POMAPF',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'replay_directory': './renders/test_e7/',
+                                       'seed': None,
+                                       'size': 16,
+                                       'targets_xy': None},
+                    'seed': 507829986},
+    'epsilon': 1.0,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': True,
+    'fixed_p': True,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': None,
+    'name': 'iql',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-test-PyMARL',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 507829986,
+    't_max': 10000000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 15:29:34] my_main Loading model from /home/maddpg/pogema_env/pogema_baselines/pymarl/results/models/iql__2023-10-28_20-38-37/800221
+b'' None

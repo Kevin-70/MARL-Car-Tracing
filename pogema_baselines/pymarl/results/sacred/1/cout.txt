@@ -1,0 +1,112 @@
+[INFO 21:06:50] pymarl Running command 'my_main'
+[INFO 21:06:50] pymarl Started run with ID "1"
+[DEBUG 21:06:50] pymarl Starting Heartbeat
+[DEBUG 21:06:50] my_main Started
+[INFO 21:06:50] my_main Experiment Parameters:
+[INFO 21:06:50] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'env': 'pogema',
+    'env_args': {   'grid_config': {   'FREE': 0,
+                                       'MOVES': [   [   0,
+                                                        0],
+                                                    [   -1,
+                                                        0],
+                                                    [   1,
+                                                        0],
+                                                    [   0,
+                                                        -1],
+                                                    [   0,
+                                                        1]],
+                                       'OBSTACLE': 1,
+                                       'agents_xy': None,
+                                       'auto_reset': None,
+                                       'collision_system': 'priority',
+                                       'density': 0.3,
+                                       'empty_outside': True,
+                                       'integration': None,
+                                       'map': None,
+                                       'map_name': 'custom',
+                                       'max_episode_steps': 64,
+                                       'num_agents': 8,
+                                       'num_criminal': 1,
+                                       'obs_radius': 5,
+                                       'observation_type': 'default',
+                                       'on_target': 'finish',
+                                       'persistent': False,
+                                       'seed': None,
+                                       'size': 8,
+                                       'targets_xy': None},
+                    'seed': 242715195},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'gamma': 0.99,
+    'grad_norm_clip': 10.0,
+    'hidden_dim1': 128,
+    'hidden_dim2': 64,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 2000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'name': 'qmix',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'project_name': 'Pogema-PyMARL-Debug',
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 2000,
+    'save_model': True,
+    'save_model_interval': 10000000,
+    'save_replay': False,
+    'seed': 242715195,
+    't_max': 10000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 2000,
+    'test_nepisode': 1,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'use_wandb': False}
+
+[INFO 21:06:54] my_main Beginning training for 10000 timesteps
+/home/maddpg/pogema_env/pogema-baselines/pymarl/components/episode_buffer.py:103: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1659484657607/work/torch/csrc/utils/tensor_new.cpp:204.)
+  v = th.tensor(v, dtype=dtype, device=self.device)
+/home/maddpg/pogema_env/pogema-baselines/pymarl/components/episode_buffer.py:103: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 21:06:54] my_main t_env: 34 / 10000
+[INFO 21:06:54] my_main Estimated time left: 2 seconds. Time passed: 0 seconds
+[INFO 21:06:54] my_main Saving models to results/models/qmix__2023-10-11_21-06-50/34
+[INFO 21:07:17] my_main Updated target network
+/home/maddpg/pogema_env/pogema_ours/envs.py:200: Warning: Created valid configuration only with 1 attempts.
+  self.grid: Grid = Grid(grid_config=self.grid_config)
+[INFO 21:07:24] my_main Recent Stats | t_env:       2002 | Episode:      260
+CSR:                       0.0000	ISR:                       0.1250	ep_length_mean:           34.0000	epsilon:                   1.0000
+grad_norm:               611.3391	loss:                    37010.8477	q_taken_mean:              0.0079	return_mean:             -4325.0000
+return_std:                0.0000	target_mean:              -5.1835	td_error_abs:            131.7496	test_CSR:                  0.0000
+test_ISR:                  0.1250	test_ep_length_mean:       1.0000	test_return_mean:        545.0000	test_return_std:           0.0000
+
+[INFO 21:07:25] my_main t_env: 2097 / 10000
+[INFO 21:07:25] my_main Estimated time left: 1 minutes, 57 seconds. Time passed: 30 seconds
+[INFO 21:07:42] my_main Updated target network

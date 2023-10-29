@@ -1,0 +1,21 @@
+name: pogema-appo-32x32
+
+global_settings:
+  use_wandb: True
+experiment_settings:
+  save_every_sec: 120
+  encoder_custom: pogema_residual
+  train_for_env_steps: 500000000
+async_ppo:
+  experiment_summaries_interval: 10
+  ppo_epochs: 1
+  batch_size: 4096
+  use_rnn: True
+  max_grad_norm: 0.0
+  num_workers: 4
+  num_envs_per_worker: 2
+  ppo_clip_ratio: 0.03
+environment:
+  grid_config:
+    map_name:
+      grid_search: [Easy32x32, Normal32x32, Hard32x32, ExtraHard32x32 ]

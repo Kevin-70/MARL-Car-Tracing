@@ -1,0 +1,102 @@
+{
+  "action_selector": "epsilon_greedy",
+  "agent": "rnn",
+  "agent_output_type": "q",
+  "batch_size": 32,
+  "batch_size_run": 1,
+  "buffer_cpu_only": true,
+  "buffer_size": 5000,
+  "checkpoint_path": "",
+  "critic_lr": 0.0005,
+  "double_q": true,
+  "env": "pogema",
+  "env_args": {
+    "grid_config": {
+      "FREE": 0,
+      "MOVES": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "OBSTACLE": 1,
+      "agents_xy": null,
+      "alpha": 0.8,
+      "auto_reset": null,
+      "collision_system": "priority",
+      "density": 0.2,
+      "empty_outside": true,
+      "integration": null,
+      "map": null,
+      "map_name": "OneCriminal",
+      "max_episode_steps": 256,
+      "num_agents": 3,
+      "num_criminal": 1,
+      "obs_radius": 5,
+      "observation_type": "POMAPF",
+      "on_target": "finish",
+      "persistent": false,
+      "replay_directory": "./renders/distance_0.3/",
+      "seed": null,
+      "size": 16,
+      "targets_xy": null
+    }
+  },
+  "epsilon": 0.3,
+  "epsilon_anneal_time": 50000,
+  "epsilon_finish": 0.05,
+  "epsilon_start": 1.0,
+  "evaluate": false,
+  "fixed_p": true,
+  "gamma": 0.99,
+  "grad_norm_clip": 10.0,
+  "hidden_dim1": 128,
+  "hidden_dim2": 64,
+  "label": "default_label",
+  "learner": "q_learner",
+  "learner_log_interval": 2000,
+  "load_step": 0,
+  "local_results_path": "results",
+  "log_interval": 2000,
+  "lr": 0.0005,
+  "mac": "basic_mac",
+  "mixer": null,
+  "name": "iql",
+  "obs_agent_id": true,
+  "obs_last_action": true,
+  "optim_alpha": 0.99,
+  "optim_eps": 1e-05,
+  "project_name": "Pogema-dqn-dis",
+  "repeat_id": 1,
+  "rnn_hidden_dim": 64,
+  "runner": "episode",
+  "runner_log_interval": 2000,
+  "save_model": true,
+  "save_model_interval": 200000,
+  "save_replay": false,
+  "seed": 799886320,
+  "t_max": 2000000,
+  "target_update_interval": 200,
+  "test_greedy": true,
+  "test_interval": 2000,
+  "test_nepisode": 1,
+  "use_cuda": true,
+  "use_tensorboard": true,
+  "use_wandb": false
+}

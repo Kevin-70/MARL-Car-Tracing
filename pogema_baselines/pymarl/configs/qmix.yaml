@@ -1,0 +1,18 @@
+#police
+algo: QMIX
+settings:
+  t_max: 2000000
+  fixed_p: False #T:Police, F:Criminal
+  epsilon: 1.0
+  test_nepisode: 1
+logging:
+  use_wandb: False
+  project_name: "Pogema-qmix-PyMARL"
+  save_model_interval: 200000
+agent_params:
+  agent: "rnn"
+env_args: 
+  grid_config: 
+    map_name: OneCriminal
+    replay_directory: "./renders/police_qmix_e1_a1_new/"
+    alpha: 1.0
